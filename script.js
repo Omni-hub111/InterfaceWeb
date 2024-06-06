@@ -174,3 +174,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+
+    function hideLoadingScreen() {
+        document.getElementById('load').classList.add('hidden');
+        document.documentElement.classList.add('Loaded');
+        document.body.classList.add('Loaded');
+    }
+
+    // Set a timeout to hide the loading screen after 2.7 seconds
+    setTimeout(hideLoadingScreen, 2700);
+});
+
+
